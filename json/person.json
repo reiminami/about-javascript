@@ -1,0 +1,9 @@
+{
+    "object": {
+        "name": "Paul",
+        "age": 22,
+        "height": 179.6,
+        "weight": 78.9,
+        "badYears": [2015, 2021]
+    }
+}
