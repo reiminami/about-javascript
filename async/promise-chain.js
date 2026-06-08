@@ -1,9 +1,9 @@
-Promise.resolve(1).then((value) => {
-    console.log(value);     // 1
+Promise.resolve(10).then((value) => {
+    console.log(value);     // 10
     return value * 2;
 }).then(value => {
-    console.log(value);     // 2
+    console.log(value);     // 20
     return value * 2;
 }).then(value => {
-    console.log(value);     // 4
+    console.log(value);     // 40
 });

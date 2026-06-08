@@ -1,4 +1,4 @@
-// async: 常にPromise　を返す関数になる
+// async: 常にPromiseを返す関数になる
 const wait = async(timeoutMs) => {
     // await: Promiseがfulfilled されるまで待つ
     await new Promise((resolve) => {

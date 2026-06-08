@@ -12,5 +12,5 @@ const p2 = wait(200);
 const p3 = wait(300);
 
 Promise.all([p1, p2, p3]).then(function(values) {
-    console.log(values);    // [ 100, 200, 300 ]
+    console.log(values);    // [100, 200, 300]
 });

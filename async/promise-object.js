@@ -1,13 +1,20 @@
-const promise = new Promise((resolve) => {
+const p = new Promise((resolve) => {
     setTimeout(() => {
-        console.log("Run");
+        console.log("実行");
         resolve();
     }, 1000);
 });
 
-const onFulfilled  = () => { console.log("Fullfilled"); }
-const onRejected   = () => { console.log("Rejected"); }
+// 成功時に呼び出す
+const onFulfilled = () => {
+    console.log("Fulfilled");
+}
 
-promise
-    .then(onFulfilled)
-    .catch(onRejected);
+// 失敗時に呼び出す
+const onRejected = () => {
+    console.log("Rejected");
+};
+
+p
+.then(onFulfilled)  // 成功
+.catch(onRejected); // 失敗
